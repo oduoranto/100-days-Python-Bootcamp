@@ -42,7 +42,10 @@ def calculator(first_number, second_number, operation):
         return additional_calculation(results)
     
 first_number= float(input("What is your first number: "))
-print("+\n-\n/\n*\n")
+symbol = ["+", "-", "*", "/"]
+    
+for key in symbol:
+    print(key)
 operation = input("Pick an operation: ")
 second_number =float(input("What is your next number: "))
 calculator(first_number, second_number,operation)
